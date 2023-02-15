@@ -18,12 +18,12 @@ disp('Running PLS')
 
 %import response variables
 %importdata(response_var_file);
-importdata('F:/Lab_info/wanglab/My_project/crab-eating macaque/results/results_20201202/latest_pls_20210330/roi173_97NCXareas/vsd4_ncx_rmbatch_97regions_matchedROI173_ct_gv.csv');
+importdata('F:/Lab_info/wanglab/My_project/crab-eating macaque/results/results_20201202/latest_pls_20210330/roi173_97NCXareas/vsd4_ncx_rmbatch_97regions_matchedROI173_ct.csv');
 
 %unwrap and tidy MRI response variable names
 ROIname=ans.textdata(:,1);
 ResponseVarNames=ans.textdata(1,:);
-ResponseVarNames=ans.textdata(1,2:3);
+ResponseVarNames=ans.textdata(1,2);
 ResponseVarNames=ans.textdata(1,:);
 ResponseVarNames(1)=[];
 ROIname(1)=[];
